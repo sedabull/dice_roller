@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author= "Seth Bullock">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dice Roller</title>
+</head>
+<body>
+    <h1>SUPER AWESOME DICE ROLLER!</h1>
+    <main>
+        <div>
+            <label for="num-sides">NUMBER OF SIDES:</label>
+            <input type="number" min="2" max="99" value="6" name="num-sides" id="num-sides">
+        </div>
+        <div>
+            <label for="num-dice">NUMBER OF DICE:</label>
+            <input type="number" min="1" max="100" value="1" name="num-dice" id="num-dice">
+        </div>
+        <nav>
+            <button type="submit" id="roll-dice">ROLL!</button>
+            <button type="submit" id="reveal-rolls">REVEAL!</button>
+            <button type="submit" id="reset-page">RESET!</button>
+        </nav>
+        <h2>TOTAL:<span id="total">???</span>!</h2>
+    </main>
+    <ol id="all-rolls"></ol>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
